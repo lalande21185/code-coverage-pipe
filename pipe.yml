@@ -1,0 +1,14 @@
+name: Register code coverage
+image: lalande300/code-coverage-pipe:1.0.0
+category: Testing
+description: Register your repository code coverage to view it in bitbucket.
+variables:
+  - name: APP_URL
+repository: https://github.com/lalande21185/code-coverage-pipe
+maintainer:
+  name: Lalande
+  website: https://github.com/lalande21185
+tags:
+  - 'php'
+  - 'php unit'
+  - 'test coverage'
