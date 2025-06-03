@@ -1,24 +1,23 @@
 # Bitbucket PHP code coverage pipe
 
 ## Description
-This repository is for a Bitbucket pipe. It is meant to be used in combination of 
-the Bitbucket app (to be released).
+This repository is for a Bitbucket pipe. It is meant to be used in combination with 
+the [Bitbucket app](https://github.com/lalande21185/code-coverage-app).
 
-It will compute the coverage and send it to the app so you can view it directly in Bitbucket.
-
+It computes your test code coverage and sends it to the app so you can view it directly in Bitbucket.
 ## Prerequisites
 
-- Have the Bitbucket app (to be released) installed
+- Have the [Bitbucket app](https://github.com/lalande21185/code-coverage-app) installed
 - Use PHP
-- Use PHP Unit for your tests
+- Use PHPUnit for your tests
 
 ## What does the pipe do?
 
 See `pipe.sh`
 
-1. Run your tests with a coverage report
-2. Get the coverage figure from the report
-3. Send the coverage figure for the branch to the Bitbucket app
+1. Runs your tests with a coverage report
+2. Extracts the coverage figure from the report
+3. Sends the coverage figure for the branch to the Bitbucket app
 
 ## Pipe public build
 
@@ -26,7 +25,7 @@ https://hub.docker.com/r/lalande300/code-coverage-pipe
 
 ## Use
 
-In your bitbucket pipeline:
+In your Bitbucket pipeline:
 
 ```
 script:
@@ -35,24 +34,26 @@ script:
       APP_URL: $APP_URL
 ```
 
+`$APP_URL` is provided by the Bitbucket app in the main view of your repository.
+
 Please read the Bitbucket documentation about pipes.
 
 ### Installing
 
 If you want to build it yourself:
 
-1. Pull the repository
-2. Build the docker image
+1. Clone the repository
+2. Build the Docker image
 3. Publish the image
 4. Use the pipe
 
 ## Help
 
-Please contact me if you need help to set it up and make it work.
+Please contact me if you need help setting it up or getting it to work.
 
 ## Contributing
 
-Open to all contributions. Please try to contact me first.
+All contributions are welcome. Please try to contact me first.
 
 ## Author
 
