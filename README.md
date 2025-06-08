@@ -1,10 +1,11 @@
 # Bitbucket PHP code coverage pipe
 
 ## Description
-This repository is for a Bitbucket pipe. It is meant to be used in combination with 
-the [Bitbucket app](https://github.com/lalande21185/code-coverage-app).
+This repository contains a Bitbucket pipe intended for use with the
+[Bitbucket app](https://github.com/lalande21185/code-coverage-app).
 
-It computes your test code coverage and sends it to the app so you can view it directly in Bitbucket.
+The pipe calculates test code coverage and sends the results to the application, allowing you to view it directly within Bitbucket.
+
 ## Prerequisites
 
 - Have the [Bitbucket app](https://github.com/lalande21185/code-coverage-app) installed
@@ -15,9 +16,9 @@ It computes your test code coverage and sends it to the app so you can view it d
 
 See `pipe.sh`
 
-1. Runs your tests with a coverage report
-2. Extracts the coverage figure from the report
-3. Sends the coverage figure for the branch to the Bitbucket app
+1. Runs your tests with a coverage report.
+2. Extracts the coverage figure from the report.
+3. Sends the coverage figure for the branch to the Bitbucket app.
 
 ## Pipe public build
 
@@ -36,24 +37,24 @@ script:
 
 `$APP_URL` is provided by the Bitbucket app in the main view of your repository.
 
-Please read the Bitbucket documentation about pipes.
+Please read the [Bitbucket documentation about pipes](https://support.atlassian.com/bitbucket-cloud/docs/use-pipes-in-bitbucket-pipelines/). 
 
 ### Installing
 
-If you want to build it yourself:
+If you prefer to build it yourself.
 
-1. Clone the repository
-2. Build the Docker image
-3. Publish the image
-4. Use the pipe
+1. Clone the repository.
+2. Build the Docker image.
+3. Publish the image.
+4. Use the pipe.
 
 ## Help
 
-Please contact me if you need help setting it up or getting it to work.
+Please contact me if you need help setting it up or getting it to work. Open an issue on GitHub.
 
 ## Contributing
 
-All contributions are welcome. Please try to contact me first.
+All contributions are welcome. Please try to contact me first. Open an issue on GitHub.
 
 ## Author
 
