@@ -30,7 +30,7 @@ In your Bitbucket pipeline:
 
 ```
 script:
-  - pipe: lalande300/code-coverage-pipe:1.0.1
+  - pipe: lalande300/code-coverage-pipe:1.0.2
     variables:
       APP_URL: $APP_URL
 ```

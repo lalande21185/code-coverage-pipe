@@ -10,7 +10,6 @@ RUN docker-php-ext-enable xdebug
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
-COPY pipe.yml LICENSE.txt README.md /
 COPY pipe /pipe
 
 RUN chmod +x /pipe/pipe.sh
